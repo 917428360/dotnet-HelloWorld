@@ -1,4 +1,4 @@
-# 3. Hello World App
+# Hello World App
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uygulama, 32 karakterli Random 100000 string üretiyor, daha sonra paralel olarak bu 100000 stringi işleyip onların MD5 özetini alıyor. Bir amacı olan program değil, kubernetes scale-up, scale-down işlemlerini rahat yapabilmek için CPU tüketiminin fazla olması hedeflenerek geliştirilmiştir.
 
