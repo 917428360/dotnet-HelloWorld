@@ -15,7 +15,7 @@ node('trendyol-hello-world') {
     }
     stage('Publish Docker')
     {
-        sh("eval sudo \$(aws ecr get-login --no-include-email --region us-east-1 --profile trendyol-ecr)")
+        sh("eval sudo \$( ~/bin/aws ecr get-login --no-include-email --region us-east-1 --profile trendyol-ecr)")
         sh("sudo docker push 765584129419.dkr.ecr.us-east-1.amazonaws.com/helloworld:latest")
     }
 }
