@@ -15,7 +15,7 @@ node("runner"){
     
     stage("publish"){
         sh " mkdir -p ${targetDir} "
-        sh " dotnet publish -o ${targetDir}  && ll ${targetDir}"
+        sh " dotnet publish -o ${targetDir}  && ls -l ${targetDir}"
         
     }
 }
