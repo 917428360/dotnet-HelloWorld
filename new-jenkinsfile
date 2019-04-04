@@ -1,0 +1,21 @@
+#!groovy
+
+String buildShell = "${env.buildShell}"
+String targetDir  = "${env.buildShell}"
+
+node("runner"){
+    stage("checkout"){
+        checkout scm
+    }
+    
+    
+    stage("build"){
+        sh " ${buildShell} "
+    }
+    
+    
+    stage("publish"){
+        sh "dotnet publish -o ${targetDir}  && ll ${targetDir}"
+        
+    }
+}
