@@ -1,7 +1,6 @@
-#!groovy
 
 String buildShell = "${env.buildShell}"
-String targetDir  = "${env.buildShell}"
+String targetDir  = "${env.targetDir}"
 
 node("runner"){
     stage("checkout"){
