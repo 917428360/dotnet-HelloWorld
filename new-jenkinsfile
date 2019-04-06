@@ -2,7 +2,7 @@
 String buildShell = "${env.buildShell}"
 String targetDir  = "${env.targetDir}"
 
-node("runner"){
+node("any"){
     stage("checkout"){
         checkout scm
     }
